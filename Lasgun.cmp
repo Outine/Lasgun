@@ -1,0 +1,101 @@
+Cmp-Mod V01 Created by Cvpcb (2015-05-28 BZR 5690)-product   date = Monday, 02 November 2015 23:22:09
+
+BeginCmp
+TimeStamp = /5637FF63;
+Reference = C1;
+ValeurCmp = C;
+IdModule  = Capacitors_SMD:C_0603;
+EndCmp
+
+BeginCmp
+TimeStamp = /5638004C;
+Reference = C2;
+ValeurCmp = C;
+IdModule  = Capacitors_SMD:C_0603;
+EndCmp
+
+BeginCmp
+TimeStamp = /563814AB;
+Reference = C3;
+ValeurCmp = C;
+IdModule  = Capacitors_SMD:C_0603;
+EndCmp
+
+BeginCmp
+TimeStamp = /5638066C;
+Reference = C4;
+ValeurCmp = C;
+IdModule  = Capacitors_SMD:C_0603;
+EndCmp
+
+BeginCmp
+TimeStamp = /563806D2;
+Reference = C5;
+ValeurCmp = C;
+IdModule  = Capacitors_SMD:C_0603;
+EndCmp
+
+BeginCmp
+TimeStamp = /5637D59C;
+Reference = D1;
+ValeurCmp = LED;
+IdModule  = LEDs:LED-5MM;
+EndCmp
+
+BeginCmp
+TimeStamp = /5637E2EF;
+Reference = IC1;
+ValeurCmp = ATMEGA328P-A;
+IdModule  = Housings_QFP:TQFP-32_7x7mm_Pitch0.8mm;
+EndCmp
+
+BeginCmp
+TimeStamp = /5637D4CB;
+Reference = M1;
+ValeurCmp = STM32F042G6;
+IdModule  = james:James-TSSOP-20;
+EndCmp
+
+BeginCmp
+TimeStamp = /5637FD73;
+Reference = M2;
+ValeurCmp = EPSON_FA-20H_CRYSTAL;
+IdModule  = Ava:Ava-EPSON-FA-20H-CRYSTAL;
+EndCmp
+
+BeginCmp
+TimeStamp = /5637D5D8;
+Reference = Q1;
+ValeurCmp = Q_NMOS_GSD;
+IdModule  = Transistors_SMD:sc70;
+EndCmp
+
+BeginCmp
+TimeStamp = /5637D53F;
+Reference = R1;
+ValeurCmp = R;
+IdModule  = Resistors_SMD:R_0603;
+EndCmp
+
+BeginCmp
+TimeStamp = /5637E746;
+Reference = R2;
+ValeurCmp = R;
+IdModule  = Resistors_SMD:R_0603;
+EndCmp
+
+BeginCmp
+TimeStamp = /5637EA97;
+Reference = R3;
+ValeurCmp = 10K;
+IdModule  = Resistors_SMD:R_0603;
+EndCmp
+
+BeginCmp
+TimeStamp = /56381B20;
+Reference = SWD1;
+ValeurCmp = CON_HEADER_1X02-PTH;
+IdModule  = Wire_Pads:SolderWirePad_2x_0-8mmDrill;
+EndCmp
+
+EndListe
