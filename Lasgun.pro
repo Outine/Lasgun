@@ -1,4 +1,4 @@
-update=Monday, 02 November 2015 21:25:13
+update=Monday, 02 November 2015 23:52:11
 version=1
 last_client=kicad
 [pcbnew]
@@ -65,3 +65,13 @@ LibName33=James
 LibName34=SparkFun-RF
 LibName35=STM32F4LQFP144
 LibName36=stm32f072cb
+LibName37=/Users/james/Dropbox/DropBoxEagle/KicadGit/imciner2/symbols/DataStorage
+LibName38=/Users/james/Dropbox/DropBoxEagle/KicadGit/imciner2/symbols/Diodes
+LibName39=/Users/james/Dropbox/DropBoxEagle/KicadGit/imciner2/symbols/Microprocessors
+LibName40=/Users/james/Dropbox/DropBoxEagle/KicadGit/imciner2/symbols/MiscellaneousDevices
+LibName41=/Users/james/Dropbox/DropBoxEagle/KicadGit/imciner2/symbols/Passives
+LibName42=/Users/james/Dropbox/DropBoxEagle/KicadGit/imciner2/symbols/PMOD
+LibName43=/Users/james/Dropbox/DropBoxEagle/KicadGit/imciner2/symbols/PowerComponents
+LibName44=/Users/james/Dropbox/DropBoxEagle/KicadGit/imciner2/symbols/RF_OEM_Parts
+LibName45=/Users/james/Dropbox/DropBoxEagle/KicadGit/imciner2/symbols/Sensors
+LibName46=/Users/james/Dropbox/DropBoxEagle/KicadGit/imciner2/symbols/TransistorParts

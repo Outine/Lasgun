@@ -1,4 +1,4 @@
-Cmp-Mod V01 Created by Cvpcb (2015-05-28 BZR 5690)-product   date = Monday, 02 November 2015 23:22:09
+Cmp-Mod V01 Created by Cvpcb (2015-05-28 BZR 5690)-product   date = Monday, 02 November 2015 23:53:07
 
 BeginCmp
 TimeStamp = /5637FF63;
@@ -64,6 +64,13 @@ IdModule  = Ava:Ava-EPSON-FA-20H-CRYSTAL;
 EndCmp
 
 BeginCmp
+TimeStamp = /56384092;
+Reference = P1;
+ValeurCmp = CONN_01X03;
+IdModule  = Pin_Headers:Pin_Header_Angled_1x03;
+EndCmp
+
+BeginCmp
 TimeStamp = /5637D5D8;
 Reference = Q1;
 ValeurCmp = Q_NMOS_GSD;
@@ -96,6 +103,13 @@ TimeStamp = /56381B20;
 Reference = SWD1;
 ValeurCmp = CON_HEADER_1X02-PTH;
 IdModule  = Wire_Pads:SolderWirePad_2x_0-8mmDrill;
+EndCmp
+
+BeginCmp
+TimeStamp = /563820F3;
+Reference = U1;
+ValeurCmp = 74LS08;
+IdModule  = Housings_SSOP:TSSOP-14_4.4x5mm_Pitch0.65mm;
 EndCmp
 
 EndListe
