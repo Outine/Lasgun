@@ -1,4 +1,4 @@
-update=Monday, 02 November 2015 23:52:11
+update=Wednesday, 04 November 2015 00:12:50
 version=1
 last_client=kicad
 [pcbnew]
@@ -75,3 +75,13 @@ LibName43=/Users/james/Dropbox/DropBoxEagle/KicadGit/imciner2/symbols/PowerCompo
 LibName44=/Users/james/Dropbox/DropBoxEagle/KicadGit/imciner2/symbols/RF_OEM_Parts
 LibName45=/Users/james/Dropbox/DropBoxEagle/KicadGit/imciner2/symbols/Sensors
 LibName46=/Users/james/Dropbox/DropBoxEagle/KicadGit/imciner2/symbols/TransistorParts
+[schematic_editor]
+version=1
+PageLayoutDescrFile=
+PlotDirectoryName=
+SubpartIdSeparator=0
+SubpartFirstId=65
+NetFmtName=Pcbnew
+SpiceForceRefPrefix=0
+SpiceUseNetNumbers=0
+LabSize=39

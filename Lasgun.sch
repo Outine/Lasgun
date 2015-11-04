@@ -104,11 +104,7 @@ F 3 "" H 8950 2300 60  0000 C CNN
 	1    8950 2300
 	1    0    0    -1  
 $EndComp
-Text GLabel 5150 2650 2    60   Input ~ 0
-swdio
-Text GLabel 5150 2500 2    60   Input ~ 0
-swdclk
-Text Notes 7250 2250 0    39   ~ 0
+Text Notes 7150 2150 0    39   ~ 0
 STM32 pin used:\npa6 - SPI1_MISO, I2S1_MCK, \nTIM3_CH1, TIM1_BKIN, TIM16_CH1, TSC_G2_IO3,\nAVR pin used:\nPWM pin on OC1A
 $Comp
 L ATMEGA328P-A IC1
@@ -123,13 +119,13 @@ F 3 "" H 4200 5200 60  0000 C CNN
 $EndComp
 Text GLabel 5150 3350 2    39   Input ~ 0
 LED_FET
-Text GLabel 8300 2250 0    60   Input ~ 0
+Text GLabel 7750 2300 0    60   Input ~ 0
 LED_FET
 $Comp
-L +3.3V #PWR9
+L +3.3V #PWR12
 U 1 1 5637E45F
 P 5150 2950
-F 0 "#PWR9" H 5150 2800 50  0001 C CNN
+F 0 "#PWR12" H 5150 2800 50  0001 C CNN
 F 1 "+3.3V" H 5150 3090 50  0000 C CNN
 F 2 "" H 5150 2950 60  0000 C CNN
 F 3 "" H 5150 2950 60  0000 C CNN
@@ -137,10 +133,10 @@ F 3 "" H 5150 2950 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +3.3V #PWR6
+L +3.3V #PWR9
 U 1 1 5637E47B
 P 3050 2950
-F 0 "#PWR6" H 3050 2800 50  0001 C CNN
+F 0 "#PWR9" H 3050 2800 50  0001 C CNN
 F 1 "+3.3V" H 3050 3090 50  0000 C CNN
 F 2 "" H 3050 2950 60  0000 C CNN
 F 3 "" H 3050 2950 60  0000 C CNN
@@ -148,10 +144,10 @@ F 3 "" H 3050 2950 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +3.3V #PWR5
+L +3.3V #PWR8
 U 1 1 5637E4EB
 P 3000 4100
-F 0 "#PWR5" H 3000 3950 50  0001 C CNN
+F 0 "#PWR8" H 3000 3950 50  0001 C CNN
 F 1 "+3.3V" H 3000 4240 50  0000 C CNN
 F 2 "" H 3000 4100 60  0000 C CNN
 F 3 "" H 3000 4100 60  0000 C CNN
@@ -159,10 +155,10 @@ F 3 "" H 3000 4100 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR4
+L GND #PWR6
 U 1 1 5637E5A9
 P 2950 6600
-F 0 "#PWR4" H 2950 6350 50  0001 C CNN
+F 0 "#PWR6" H 2950 6350 50  0001 C CNN
 F 1 "GND" H 2950 6450 50  0000 C CNN
 F 2 "" H 2950 6600 60  0000 C CNN
 F 3 "" H 2950 6600 60  0000 C CNN
@@ -170,36 +166,14 @@ F 3 "" H 2950 6600 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR10
+L GND #PWR13
 U 1 1 5637E6C2
 P 5150 3100
-F 0 "#PWR10" H 5150 2850 50  0001 C CNN
+F 0 "#PWR13" H 5150 2850 50  0001 C CNN
 F 1 "GND" H 5150 2950 50  0000 C CNN
 F 2 "" H 5150 3100 60  0000 C CNN
 F 3 "" H 5150 3100 60  0000 C CNN
 	1    5150 3100
-	1    0    0    -1  
-$EndComp
-$Comp
-L R R2
-U 1 1 5637E746
-P 2700 2750
-F 0 "R2" V 2780 2750 50  0000 C CNN
-F 1 "10k" V 2700 2750 50  0000 C CNN
-F 2 "Resistors_SMD:R_0603" V 2630 2750 30  0001 C CNN
-F 3 "" H 2700 2750 30  0000 C CNN
-	1    2700 2750
-	0    1    1    0   
-$EndComp
-$Comp
-L +3.3V #PWR2
-U 1 1 5637E81D
-P 2250 2750
-F 0 "#PWR2" H 2250 2600 50  0001 C CNN
-F 1 "+3.3V" H 2250 2890 50  0000 C CNN
-F 2 "" H 2250 2750 60  0000 C CNN
-F 3 "" H 2250 2750 60  0000 C CNN
-	1    2250 2750
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -214,10 +188,10 @@ F 3 "" H 5850 5350 30  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR1
+L GND #PWR3
 U 1 1 5637EAF7
 P 1900 2550
-F 0 "#PWR1" H 1900 2300 50  0001 C CNN
+F 0 "#PWR3" H 1900 2300 50  0001 C CNN
 F 1 "GND" H 1900 2400 50  0000 C CNN
 F 2 "" H 1900 2550 60  0000 C CNN
 F 3 "" H 1900 2550 60  0000 C CNN
@@ -225,22 +199,20 @@ F 3 "" H 1900 2550 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +3.3V #PWR13
+L +3.3V #PWR16
 U 1 1 5637EC9B
 P 5850 5100
-F 0 "#PWR13" H 5850 4950 50  0001 C CNN
+F 0 "#PWR16" H 5850 4950 50  0001 C CNN
 F 1 "+3.3V" H 5850 5240 50  0000 C CNN
 F 2 "" H 5850 5100 60  0000 C CNN
 F 3 "" H 5850 5100 60  0000 C CNN
 	1    5850 5100
 	1    0    0    -1  
 $EndComp
-Text GLabel 6400 5550 2    60   Input ~ 0
-!RESET
+Text GLabel 6400 5550 2    39   Input ~ 0
+~RESET
 Text GLabel 5600 4200 2    39   Input ~ 0
 LED_FET
-Text GLabel 6250 4300 2    39   Input ~ 0
-AVR_PROG_SS
 Text GLabel 6250 4400 2    39   Input ~ 0
 AVR_PROG_MOSI
 Text GLabel 6250 4500 2    39   Input ~ 0
@@ -253,7 +225,7 @@ Text GLabel 5700 6300 2    39   Input ~ 0
 LED1
 Text GLabel 5700 6200 2    39   Input ~ 0
 LED2
-Text GLabel 5700 6000 2    39   Input ~ 0
+Text GLabel 5600 4300 2    39   Input ~ 0
 LED3
 Text GLabel 2900 5450 0    39   Input ~ 0
 BAT_MON
@@ -291,23 +263,23 @@ F 3 "" H 3250 4950 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR3
+L GND #PWR4
 U 1 1 56380212
 P 2250 5650
-F 0 "#PWR3" H 2250 5400 50  0001 C CNN
+F 0 "#PWR4" H 2250 5400 50  0001 C CNN
 F 1 "GND" H 2250 5500 50  0000 C CNN
 F 2 "" H 2250 5650 60  0000 C CNN
 F 3 "" H 2250 5650 60  0000 C CNN
 	1    2250 5650
 	1    0    0    -1  
 $EndComp
-Text Notes 7300 5650 0    60   ~ 0
+Text Notes 7300 5650 0    39   ~ 0
 732-FA20H-16F12Z-AC3\nSmall and cheap crystal.\n
 $Comp
-L C C4
+L C cy1
 U 1 1 5638066C
 P 7050 5500
-F 0 "C4" H 7075 5600 50  0000 L CNN
+F 0 "cy1" H 7075 5600 50  0000 L CNN
 F 1 "8pf" H 7075 5400 50  0000 L CNN
 F 2 "Capacitors_SMD:C_0603" H 7088 5350 30  0001 C CNN
 F 3 "" H 7050 5500 60  0000 C CNN
@@ -315,10 +287,10 @@ F 3 "" H 7050 5500 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C C5
+L C cy2
 U 1 1 563806D2
 P 8050 4950
-F 0 "C5" H 8075 5050 50  0000 L CNN
+F 0 "cy2" H 8075 5050 50  0000 L CNN
 F 1 "8pf" H 8075 4850 50  0000 L CNN
 F 2 "Capacitors_SMD:C_0603" H 8088 4800 30  0001 C CNN
 F 3 "" H 8050 4950 60  0000 C CNN
@@ -326,10 +298,10 @@ F 3 "" H 8050 4950 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR15
+L GND #PWR18
 U 1 1 56380940
 P 8050 5200
-F 0 "#PWR15" H 8050 4950 50  0001 C CNN
+F 0 "#PWR18" H 8050 4950 50  0001 C CNN
 F 1 "GND" H 8050 5050 50  0000 C CNN
 F 2 "" H 8050 5200 60  0000 C CNN
 F 3 "" H 8050 5200 60  0000 C CNN
@@ -337,10 +309,10 @@ F 3 "" H 8050 5200 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR14
+L GND #PWR17
 U 1 1 5638095C
 P 7050 5750
-F 0 "#PWR14" H 7050 5500 50  0001 C CNN
+F 0 "#PWR17" H 7050 5500 50  0001 C CNN
 F 1 "GND" H 7050 5600 50  0000 C CNN
 F 2 "" H 7050 5750 60  0000 C CNN
 F 3 "" H 7050 5750 60  0000 C CNN
@@ -348,29 +320,16 @@ F 3 "" H 7050 5750 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR17
+L GND #PWR20
 U 1 1 56380B14
 P 9050 2700
-F 0 "#PWR17" H 9050 2450 50  0001 C CNN
+F 0 "#PWR20" H 9050 2450 50  0001 C CNN
 F 1 "GND" H 9050 2550 50  0000 C CNN
 F 2 "" H 9050 2700 60  0000 C CNN
 F 3 "" H 9050 2700 60  0000 C CNN
 	1    9050 2700
 	1    0    0    -1  
 $EndComp
-$Comp
-L +3.3V #PWR16
-U 1 1 56380C22
-P 9050 1000
-F 0 "#PWR16" H 9050 850 50  0001 C CNN
-F 1 "+3.3V" H 9050 1140 50  0000 C CNN
-F 2 "" H 9050 1000 60  0000 C CNN
-F 3 "" H 9050 1000 60  0000 C CNN
-	1    9050 1000
-	1    0    0    -1  
-$EndComp
-Text Notes 3450 7450 0    60   ~ 0
-To increase LED driving capacity, we could use an AND gate. \nHave the micro ALWAYS generate the 38khz pwm, \nthen just AND it in hardware with some normal microcontroller outputs. \nThe combined output of 38khz AND ledX enable = ledX fet driver.\nWe can blast up to 4 leds that way? \nSN74HC08DBR costs 40p, runs on 3v3. 
 $Comp
 L C C3
 U 1 1 563814AB
@@ -383,10 +342,10 @@ F 3 "" H 5800 3150 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +3.3V #PWR11
+L +3.3V #PWR14
 U 1 1 5638162C
 P 5800 2950
-F 0 "#PWR11" H 5800 2800 50  0001 C CNN
+F 0 "#PWR14" H 5800 2800 50  0001 C CNN
 F 1 "+3.3V" H 5800 3090 50  0000 C CNN
 F 2 "" H 5800 2950 60  0000 C CNN
 F 3 "" H 5800 2950 60  0000 C CNN
@@ -394,69 +353,14 @@ F 3 "" H 5800 2950 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR12
+L GND #PWR15
 U 1 1 56381702
 P 5800 3450
-F 0 "#PWR12" H 5800 3200 50  0001 C CNN
+F 0 "#PWR15" H 5800 3200 50  0001 C CNN
 F 1 "GND" H 5800 3300 50  0000 C CNN
 F 2 "" H 5800 3450 60  0000 C CNN
 F 3 "" H 5800 3450 60  0000 C CNN
 	1    5800 3450
-	1    0    0    -1  
-$EndComp
-$Comp
-L CON_HEADER_1X02-PTH SWD1
-U 1 1 56381B20
-P 6450 2550
-F 0 "SWD1" H 6400 2700 50  0000 L BNN
-F 1 "CON_HEADER_1X02-PTH" H 6450 2550 50  0001 L BNN
-F 2 "Wire_Pads:SolderWirePad_2x_0-8mmDrill" H 6480 2700 20  0001 C CNN
-F 3 "" H 6450 2550 60  0000 C CNN
-	1    6450 2550
-	1    0    0    -1  
-$EndComp
-$Comp
-L 74LS08 U1
-U 1 1 563820F3
-P 9700 4450
-F 0 "U1" H 9700 4500 60  0000 C CNN
-F 1 "74LS08" H 9700 4400 60  0000 C CNN
-F 2 "Housings_SSOP:TSSOP-14_4.4x5mm_Pitch0.65mm" H 9700 4450 60  0000 C CNN
-F 3 "" H 9700 4450 60  0000 C CNN
-	1    9700 4450
-	1    0    0    -1  
-$EndComp
-$Comp
-L 74LS08 U1
-U 2 1 5638217E
-P 9700 4950
-F 0 "U1" H 9700 5000 60  0000 C CNN
-F 1 "74LS08" H 9700 4900 60  0000 C CNN
-F 2 "Housings_SSOP:TSSOP-14_4.4x5mm_Pitch0.65mm" H 9700 4950 60  0001 C CNN
-F 3 "" H 9700 4950 60  0000 C CNN
-	2    9700 4950
-	1    0    0    -1  
-$EndComp
-$Comp
-L 74LS08 U1
-U 3 1 563821FB
-P 9700 5400
-F 0 "U1" H 9700 5450 60  0000 C CNN
-F 1 "74LS08" H 9700 5350 60  0000 C CNN
-F 2 "Housings_SSOP:TSSOP-14_4.4x5mm_Pitch0.65mm" H 9700 5400 60  0001 C CNN
-F 3 "" H 9700 5400 60  0000 C CNN
-	3    9700 5400
-	1    0    0    -1  
-$EndComp
-$Comp
-L 74LS08 U1
-U 4 1 56382237
-P 9700 5850
-F 0 "U1" H 9700 5900 60  0000 C CNN
-F 1 "74LS08" H 9700 5800 60  0000 C CNN
-F 2 "Housings_SSOP:TSSOP-14_4.4x5mm_Pitch0.65mm" H 9700 5850 60  0001 C CNN
-F 3 "" H 9700 5850 60  0000 C CNN
-	4    9700 5850
 	1    0    0    -1  
 $EndComp
 Text Notes 4200 850  0    39   ~ 0
@@ -464,10 +368,10 @@ TSOP38338 is the IR receiver to use. \nIt fits in a 0.1 inch pin header slot, an
 Text GLabel 4800 1000 0    39   Input ~ 0
 IR_RECEIVER1
 $Comp
-L +3.3V #PWR8
+L +3.3V #PWR11
 U 1 1 56382F17
 P 4650 1250
-F 0 "#PWR8" H 4650 1100 50  0001 C CNN
+F 0 "#PWR11" H 4650 1100 50  0001 C CNN
 F 1 "+3.3V" H 4650 1390 50  0000 C CNN
 F 2 "" H 4650 1250 60  0000 C CNN
 F 3 "" H 4650 1250 60  0000 C CNN
@@ -475,10 +379,10 @@ F 3 "" H 4650 1250 60  0000 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L GND #PWR7
+L GND #PWR10
 U 1 1 56382F30
 P 4500 1250
-F 0 "#PWR7" H 4500 1000 50  0001 C CNN
+F 0 "#PWR10" H 4500 1000 50  0001 C CNN
 F 1 "GND" H 4500 1100 50  0000 C CNN
 F 2 "" H 4500 1250 60  0000 C CNN
 F 3 "" H 4500 1250 60  0000 C CNN
@@ -498,17 +402,15 @@ F 3 "" H 5400 1100 60  0000 C CNN
 	1    5400 1100
 	1    0    0    -1  
 $EndComp
-Text Notes 9200 6200 0    39   ~ 0
-leaving the AND gate here until we decide.\n
 $Comp
-L R R5
+L R POW1
 U 1 1 563871D0
-P 9050 1250
-F 0 "R5" V 9130 1250 50  0000 C CNN
-F 1 "R" V 9050 1250 50  0000 C CNN
-F 2 "" V 8980 1250 30  0000 C CNN
-F 3 "" H 9050 1250 30  0000 C CNN
-	1    9050 1250
+P 9050 1000
+F 0 "POW1" V 9130 1000 50  0000 C CNN
+F 1 "R" V 9050 1000 50  0000 C CNN
+F 2 "Resistors_SMD:R_2010_HandSoldering" V 8980 1000 30  0001 C CNN
+F 3 "" H 9050 1000 30  0000 C CNN
+	1    9050 1000
 	1    0    0    -1  
 $EndComp
 Text Notes 9200 1350 0    39   ~ 0
@@ -519,16 +421,16 @@ U 1 1 56387BB7
 P 8550 2500
 F 0 "R4" V 8630 2500 50  0000 C CNN
 F 1 "10K" V 8550 2500 50  0000 C CNN
-F 2 "" V 8480 2500 30  0000 C CNN
+F 2 "Resistors_SMD:R_0603" V 8480 2500 30  0001 C CNN
 F 3 "" H 8550 2500 30  0000 C CNN
 	1    8550 2500
 	1    0    0    -1  
 $EndComp
 Text Notes 9250 1000 0    118  ~ 0
 LED DRIVER. 1 of X\n
-Text Notes 3700 3800 0    118  ~ 0
-MICROCONTROLLER
-Text Notes 4400 1600 0    118  ~ 0
+Text Notes 3250 3900 0    118  ~ 0
+MICROCONTROLLER\nSTM32 OR ATMEGA328
+Text Notes 3650 1600 0    118  ~ 0
 IR DETECTOR
 Wire Wire Line
 	3350 2550 2850 2550
@@ -537,15 +439,9 @@ Wire Wire Line
 Wire Wire Line
 	5100 2550 4750 2550
 Wire Wire Line
-	5100 2250 5100 2550
-Wire Wire Line
-	5100 2500 5150 2500
-Wire Wire Line
 	4750 3350 5150 3350
 Wire Wire Line
 	8750 2300 8300 2300
-Wire Wire Line
-	8300 2300 8300 2250
 Wire Wire Line
 	3300 4200 3000 4200
 Wire Wire Line
@@ -586,9 +482,7 @@ Wire Wire Line
 Wire Wire Line
 	3200 2850 3200 2750
 Wire Wire Line
-	3200 2750 2850 2750
-Wire Wire Line
-	2550 2750 2250 2750
+	3200 2750 2750 2750
 Wire Wire Line
 	5200 5550 6400 5550
 Wire Wire Line
@@ -600,8 +494,6 @@ Wire Wire Line
 	5850 5200 5850 5100
 Wire Wire Line
 	5200 4200 5600 4200
-Wire Wire Line
-	5200 4300 6250 4300
 Wire Wire Line
 	5200 4400 6250 4400
 Wire Wire Line
@@ -618,8 +510,6 @@ Wire Wire Line
 	5200 5700 5950 5700
 Wire Wire Line
 	5200 5800 5950 5800
-Wire Wire Line
-	5200 6000 5700 6000
 Wire Wire Line
 	3300 5450 2900 5450
 Connection ~ 3050 4700
@@ -664,22 +554,6 @@ Wire Wire Line
 Wire Wire Line
 	5800 3300 5800 3450
 Wire Wire Line
-	6450 2550 6200 2550
-Wire Wire Line
-	6200 2550 6200 2250
-Wire Wire Line
-	6200 2250 5100 2250
-Connection ~ 5100 2500
-Wire Wire Line
-	5100 2650 5100 2750
-Wire Wire Line
-	5100 2750 6200 2750
-Wire Wire Line
-	6200 2750 6200 2650
-Wire Wire Line
-	6200 2650 6450 2650
-Connection ~ 5100 2650
-Wire Wire Line
 	4800 1000 5200 1000
 Wire Wire Line
 	4500 1100 5200 1100
@@ -692,9 +566,7 @@ Wire Wire Line
 Wire Wire Line
 	5700 5900 5200 5900
 Wire Wire Line
-	9050 1100 9050 1000
-Wire Wire Line
-	9050 1400 9050 1550
+	9050 1150 9050 1550
 Wire Wire Line
 	9050 2500 9050 2700
 Wire Wire Line
@@ -726,4 +598,295 @@ Wire Wire Line
 Connection ~ 9050 2050
 Text Notes 9250 1750 0    39   ~ 0
 Idea - leave a footprint on the board in \ncase we want to parallel the LEDs?\nThe MOSFET is good for a very large\n current in pulsed mode - 5+ A. 
+$Comp
+L R POW2
+U 1 1 56395770
+P 8850 1000
+F 0 "POW2" V 8930 1000 50  0000 C CNN
+F 1 "R" V 8850 1000 50  0000 C CNN
+F 2 "Resistors_SMD:R_2010_HandSoldering" V 8780 1000 30  0001 C CNN
+F 3 "" H 8850 1000 30  0000 C CNN
+	1    8850 1000
+	1    0    0    -1  
+$EndComp
+$Comp
+L +BATT #PWR19
+U 1 1 563957B8
+P 9050 700
+F 0 "#PWR19" H 9050 550 50  0001 C CNN
+F 1 "+BATT" H 9050 840 50  0000 C CNN
+F 2 "" H 9050 700 60  0000 C CNN
+F 3 "" H 9050 700 60  0000 C CNN
+	1    9050 700 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9050 700  9050 850 
+Wire Wire Line
+	9050 750  8850 750 
+Wire Wire Line
+	8850 750  8850 850 
+Connection ~ 9050 750 
+Wire Wire Line
+	8850 1150 8850 1250
+Wire Wire Line
+	8850 1250 9050 1250
+Connection ~ 9050 1250
+$Comp
+L AVR-ISP-6 CON1
+U 1 1 56395DE2
+P 9650 4400
+F 0 "CON1" H 9545 4640 50  0000 C CNN
+F 1 "AVR-ISP-6" H 9385 4170 50  0000 L BNN
+F 2 "AVR-ISP-6" V 9130 4440 50  0001 C CNN
+F 3 "" H 9625 4400 60  0000 C CNN
+	1    9650 4400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9750 4300 10150 4300
+Wire Wire Line
+	9750 4400 10150 4400
+Wire Wire Line
+	9750 4500 10150 4500
+Wire Wire Line
+	10150 4500 10150 4600
+Wire Wire Line
+	9500 4500 9150 4500
+Wire Wire Line
+	9500 4400 9150 4400
+Wire Wire Line
+	9500 4300 9150 4300
+Text GLabel 10150 4400 2    39   Input ~ 0
+AVR_PROG_MOSI
+Text GLabel 9150 4300 0    39   Input ~ 0
+AVR_PROG_MISO
+Text GLabel 9150 4400 0    39   Input ~ 0
+AVR_PROG_SCK
+Text GLabel 9150 4500 0    39   Input ~ 0
+~RESET
+Text Notes 5100 2400 0    39   ~ 0
+Reuse the AVR connector for programming the STM32\navr_sck = swdclk\navr_miso = swdio
+$Comp
+L +3.3V #PWR23
+U 1 1 56396A2E
+P 10150 4300
+F 0 "#PWR23" H 10150 4150 50  0001 C CNN
+F 1 "+3.3V" H 10150 4440 50  0000 C CNN
+F 2 "" H 10150 4300 60  0000 C CNN
+F 3 "" H 10150 4300 60  0000 C CNN
+	1    10150 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR24
+U 1 1 56396A46
+P 10150 4600
+F 0 "#PWR24" H 10150 4350 50  0001 C CNN
+F 1 "GND" H 10150 4450 50  0000 C CNN
+F 2 "" H 10150 4600 60  0000 C CNN
+F 3 "" H 10150 4600 60  0000 C CNN
+	1    10150 4600
+	1    0    0    -1  
+$EndComp
+Text GLabel 5150 2650 2    39   Input ~ 0
+AVR_PROG_MISO
+Text GLabel 5100 2550 2    39   Input ~ 0
+AVR_PROG_SCK
+$Comp
+L R R6
+U 1 1 56397423
+P 8150 2300
+F 0 "R6" V 8230 2300 50  0000 C CNN
+F 1 "100" V 8150 2300 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603" V 8080 2300 30  0001 C CNN
+F 3 "" H 8150 2300 30  0000 C CNN
+	1    8150 2300
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8000 2300 7750 2300
+Text GLabel 3150 1000 0    39   Input ~ 0
+IR_RECEIVER2
+$Comp
+L +3.3V #PWR7
+U 1 1 563977FA
+P 3000 1250
+F 0 "#PWR7" H 3000 1100 50  0001 C CNN
+F 1 "+3.3V" H 3000 1390 50  0000 C CNN
+F 2 "" H 3000 1250 60  0000 C CNN
+F 3 "" H 3000 1250 60  0000 C CNN
+	1    3000 1250
+	-1   0    0    1   
+$EndComp
+$Comp
+L GND #PWR5
+U 1 1 56397800
+P 2850 1250
+F 0 "#PWR5" H 2850 1000 50  0001 C CNN
+F 1 "GND" H 2850 1100 50  0000 C CNN
+F 2 "" H 2850 1250 60  0000 C CNN
+F 3 "" H 2850 1250 60  0000 C CNN
+	1    2850 1250
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X03 P2
+U 1 1 56397806
+P 3750 1100
+F 0 "P2" H 3750 1300 50  0000 C CNN
+F 1 "CONN_01X03" V 3850 1100 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Angled_1x03" H 3750 1100 60  0001 C CNN
+F 3 "" H 3750 1100 60  0000 C CNN
+	1    3750 1100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3150 1000 3550 1000
+Wire Wire Line
+	2850 1100 3550 1100
+Wire Wire Line
+	3000 1200 3550 1200
+Wire Wire Line
+	2850 1100 2850 1250
+Wire Wire Line
+	3000 1200 3000 1250
+Text GLabel 2750 2750 0    39   Input ~ 0
+~RESET
+Wire Wire Line
+	2550 3050 3350 3050
+Text GLabel 2550 3050 0    39   Input ~ 0
+BAT_MON
+Text Notes 1600 3100 0    39   ~ 0
+pa0 - adc_in0
+Text Notes 1600 3200 0    39   ~ 0
+pa1 - tim2_ch2
+Wire Wire Line
+	2600 3150 3350 3150
+$Comp
+L CONN_01X03 BATSIG1
+U 1 1 5639856C
+P 9800 5350
+F 0 "BATSIG1" H 9800 5550 50  0000 C CNN
+F 1 "BAT_SIG" V 9900 5350 50  0000 C CNN
+F 2 "" H 9800 5350 60  0000 C CNN
+F 3 "" H 9800 5350 60  0000 C CNN
+	1    9800 5350
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR22
+U 1 1 5639872B
+P 9350 5500
+F 0 "#PWR22" H 9350 5250 50  0001 C CNN
+F 1 "GND" H 9350 5350 50  0000 C CNN
+F 2 "" H 9350 5500 60  0000 C CNN
+F 3 "" H 9350 5500 60  0000 C CNN
+	1    9350 5500
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3V3 #PWR21
+U 1 1 56398753
+P 9350 5350
+F 0 "#PWR21" H 9350 5200 50  0001 C CNN
+F 1 "+3V3" H 9350 5490 50  0000 C CNN
+F 2 "" H 9350 5350 60  0000 C CNN
+F 3 "" H 9350 5350 60  0000 C CNN
+	1    9350 5350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9600 5350 9350 5350
+Wire Wire Line
+	9600 5450 9350 5450
+Wire Wire Line
+	9350 5450 9350 5500
+Text Notes 9500 5850 0    39   ~ 0
+Always put positive voltage connector in middle\nMeans you can't plug it in the wrong way round\nand then kill things!
+Wire Wire Line
+	9600 5250 9500 5250
+Wire Wire Line
+	9500 5250 9500 5050
+Wire Wire Line
+	9500 5050 9300 5050
+Wire Wire Line
+	5200 4300 5600 4300
+Text GLabel 9300 5050 0    39   Input ~ 0
+INPUT_CAPTURE
+Text GLabel 2600 3150 0    39   Input ~ 0
+INPUT_CAPTURE
+Wire Wire Line
+	3350 3250 2950 3250
+Wire Wire Line
+	3350 3350 2950 3350
+Text GLabel 2950 3250 0    39   Input ~ 0
+MICRO_TXOUT
+Text GLabel 2950 3350 0    39   Input ~ 0
+MICRO_RXIN
+Text Notes 1650 3350 0    39   ~ 0
+PA3, PA4 - UART2_TX, RX
+Text GLabel 5950 5800 2    39   Input ~ 0
+MICRO_TXOUT
+Text GLabel 5950 5700 2    39   Input ~ 0
+MICRO_RXIN
+$Comp
+L +BATT #PWR1
+U 1 1 56399F00
+P 600 750
+F 0 "#PWR1" H 600 600 50  0001 C CNN
+F 1 "+BATT" H 600 890 50  0000 C CNN
+F 2 "" H 600 750 60  0000 C CNN
+F 3 "" H 600 750 60  0000 C CNN
+	1    600  750 
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R2
+U 1 1 56399F2C
+P 600 1050
+F 0 "R2" V 680 1050 50  0000 C CNN
+F 1 "10k" V 600 1050 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603" V 530 1050 30  0001 C CNN
+F 3 "" H 600 1050 30  0000 C CNN
+	1    600  1050
+	-1   0    0    1   
+$EndComp
+$Comp
+L R R5
+U 1 1 56399F69
+P 600 1500
+F 0 "R5" V 680 1500 50  0000 C CNN
+F 1 "1k" V 600 1500 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603" V 530 1500 30  0001 C CNN
+F 3 "" H 600 1500 30  0000 C CNN
+	1    600  1500
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	600  750  600  900 
+Wire Wire Line
+	600  1200 600  1350
+Wire Wire Line
+	600  1650 600  1750
+$Comp
+L GND #PWR2
+U 1 1 5639A2CE
+P 600 1750
+F 0 "#PWR2" H 600 1500 50  0001 C CNN
+F 1 "GND" H 600 1600 50  0000 C CNN
+F 2 "" H 600 1750 60  0000 C CNN
+F 3 "" H 600 1750 60  0000 C CNN
+	1    600  1750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	600  1300 1050 1300
+Connection ~ 600  1300
+Text GLabel 1050 1300 2    39   Input ~ 0
+BAT_MON
+Text Notes 700  1600 0    39   ~ 0
+11:1 voltage divider \nCan monitor battery voltage here.
+Text Notes 7300 3350 0    39   ~ 0
+TODO: Need to add the PFET to kill off power to the external flight control board
 $EndSCHEMATC

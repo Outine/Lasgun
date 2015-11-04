@@ -1,43 +1,64 @@
-Cmp-Mod V01 Created by Cvpcb (2015-05-28 BZR 5690)-product   date = Monday, 02 November 2015 23:53:07
+Cmp-Mod V01 Created by Cvpcb (2015-05-28 BZR 5690)-product   date = Wednesday, 04 November 2015 00:16:28
+
+BeginCmp
+TimeStamp = /5639856C;
+Reference = BATSIG1;
+ValeurCmp = BAT_SIG;
+IdModule  = Pin_Headers:Pin_Header_Straight_1x02;
+EndCmp
 
 BeginCmp
 TimeStamp = /5637FF63;
 Reference = C1;
-ValeurCmp = C;
+ValeurCmp = 100nf;
 IdModule  = Capacitors_SMD:C_0603;
 EndCmp
 
 BeginCmp
 TimeStamp = /5638004C;
 Reference = C2;
-ValeurCmp = C;
+ValeurCmp = 100nf;
 IdModule  = Capacitors_SMD:C_0603;
 EndCmp
 
 BeginCmp
 TimeStamp = /563814AB;
 Reference = C3;
-ValeurCmp = C;
+ValeurCmp = 100nf;
 IdModule  = Capacitors_SMD:C_0603;
 EndCmp
 
 BeginCmp
+TimeStamp = /56395DE2;
+Reference = CON1;
+ValeurCmp = AVR-ISP-6;
+IdModule  = Pin_Headers:Pin_Header_Straight_2x03;
+EndCmp
+
+BeginCmp
 TimeStamp = /5638066C;
-Reference = C4;
-ValeurCmp = C;
+Reference = cy1;
+ValeurCmp = 8pf;
 IdModule  = Capacitors_SMD:C_0603;
 EndCmp
 
 BeginCmp
 TimeStamp = /563806D2;
-Reference = C5;
-ValeurCmp = C;
+Reference = cy2;
+ValeurCmp = 8pf;
 IdModule  = Capacitors_SMD:C_0603;
 EndCmp
 
 BeginCmp
 TimeStamp = /5637D59C;
 Reference = D1;
+ValeurCmp = LED;
+IdModule  = LEDs:LED-5MM;
+EndCmp
+
+BeginCmp
+TimeStamp = /563887D3;
+Reference = D2;
 ValeurCmp = LED;
 IdModule  = LEDs:LED-5MM;
 EndCmp
@@ -71,6 +92,27 @@ IdModule  = Pin_Headers:Pin_Header_Angled_1x03;
 EndCmp
 
 BeginCmp
+TimeStamp = /56397806;
+Reference = P2;
+ValeurCmp = CONN_01X03;
+IdModule  = Pin_Headers:Pin_Header_Angled_1x03;
+EndCmp
+
+BeginCmp
+TimeStamp = /563871D0;
+Reference = POW1;
+ValeurCmp = R;
+IdModule  = Resistors_SMD:R_2010_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = /56395770;
+Reference = POW2;
+ValeurCmp = R;
+IdModule  = Resistors_SMD:R_2010_HandSoldering;
+EndCmp
+
+BeginCmp
 TimeStamp = /5637D5D8;
 Reference = Q1;
 ValeurCmp = Q_NMOS_GSD;
@@ -80,14 +122,14 @@ EndCmp
 BeginCmp
 TimeStamp = /5637D53F;
 Reference = R1;
-ValeurCmp = R;
+ValeurCmp = 10k;
 IdModule  = Resistors_SMD:R_0603;
 EndCmp
 
 BeginCmp
-TimeStamp = /5637E746;
+TimeStamp = /56399F2C;
 Reference = R2;
-ValeurCmp = R;
+ValeurCmp = 10k;
 IdModule  = Resistors_SMD:R_0603;
 EndCmp
 
@@ -99,17 +141,24 @@ IdModule  = Resistors_SMD:R_0603;
 EndCmp
 
 BeginCmp
-TimeStamp = /56381B20;
-Reference = SWD1;
-ValeurCmp = CON_HEADER_1X02-PTH;
-IdModule  = Wire_Pads:SolderWirePad_2x_0-8mmDrill;
+TimeStamp = /56387BB7;
+Reference = R4;
+ValeurCmp = 10K;
+IdModule  = Resistors_SMD:R_0603;
 EndCmp
 
 BeginCmp
-TimeStamp = /563820F3;
-Reference = U1;
-ValeurCmp = 74LS08;
-IdModule  = Housings_SSOP:TSSOP-14_4.4x5mm_Pitch0.65mm;
+TimeStamp = /56399F69;
+Reference = R5;
+ValeurCmp = 1k;
+IdModule  = Resistors_SMD:R_0603;
+EndCmp
+
+BeginCmp
+TimeStamp = /56397423;
+Reference = R6;
+ValeurCmp = 100;
+IdModule  = Resistors_SMD:R_0603;
 EndCmp
 
 EndListe
