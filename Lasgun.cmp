@@ -1,4 +1,4 @@
-Cmp-Mod V01 Created by Cvpcb (2015-05-28 BZR 5690)-product   date = Wednesday, 04 November 2015 00:16:28
+Cmp-Mod V01 Created by Cvpcb (2015-05-28 BZR 5690)-product   date = Wednesday, 04 November 2015 08:48:19
 
 BeginCmp
 TimeStamp = /5639856C;
@@ -159,6 +159,20 @@ TimeStamp = /56397423;
 Reference = R6;
 ValeurCmp = 100;
 IdModule  = Resistors_SMD:R_0603;
+EndCmp
+
+BeginCmp
+TimeStamp = /5639D6EF;
+Reference = regc1;
+ValeurCmp = C;
+IdModule  = Capacitors_SMD:C_1206_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = /5639C5BC;
+Reference = VREG1;
+ValeurCmp = VREG_5PINS-SOT-23-5;
+IdModule  = james:James-SOT23-5;
 EndCmp
 
 EndListe
